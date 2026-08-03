@@ -1,0 +1,21 @@
+# MATLAB temporary files
+*.asv
+*.autosave
+*.mex*
+*.slxc
+*.p
+*.bak
+
+# Generated code
+codegen/
+slprj/
+
+# Simulation cache
+*.mldatx
+
+# Results
+results/
+
+# OS files
+Thumbs.db
+.DS_Store
