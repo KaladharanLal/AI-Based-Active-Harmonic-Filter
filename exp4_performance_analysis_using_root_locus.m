@@ -1,0 +1,13 @@
+clear all;
+clc;
+s = tf('s');
+K = 6;
+sys = (1/((s*(s+1)*(s+2))));
+H = 1;
+figure;
+rlocus(sys*H*K);
+closedloop = feedback(sys*K, H);
+figure;
+step(closedloop);
+figure;
+rlocus(closedloop);
